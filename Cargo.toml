@@ -1,0 +1,8 @@
+[package]
+
+name = "tester"
+version = "0.0.1"
+authors = ["jason"]
+
+[dependencies]
+rust-crypto = "*"
