@@ -1,5 +1,5 @@
 [root]
-name = "tester"
+name = "routeros_rust"
 version = "0.0.1"
 dependencies = [
  "rust-crypto 0.2.31 (registry+https://github.com/rust-lang/crates.io-index)",

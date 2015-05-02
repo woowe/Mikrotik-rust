@@ -1,0 +1,42 @@
+Router Os
+================
+Mikrotik API for Rust
+
+This API gives you the ability to connect to your mikrotik router over a tcp connection.
+
+### Installation
+
+Add router_os via your `Cargo.toml`:
+```toml
+[dependencies]
+router_os = "*"
+```
+
+### Usage
+```rs
+extern crate router_os;
+
+use router_os::ApiRos;
+use std::net::TcpStream;
+
+fn main() {
+    let mut stream = TcpStream::connect("192.168.1.1:8728").unwrap();
+
+	let mut apiros = ApiRos::new(&mut stream);
+	apiros.login("admin".to_string(), "".to_string());
+
+    apiros.write_sentece("/ip/address/print".to_string());
+
+    loop {
+        let reply = apiros.read_sentence();
+
+        if reply.len() == 0 {
+            continue;
+        }
+
+        if reply[0] == "!done" {
+            break;
+        }
+    }
+}
+```
