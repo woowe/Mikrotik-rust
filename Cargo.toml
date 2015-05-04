@@ -8,6 +8,8 @@ description = "Mikrotik API for Rust"
 readme = "README.md"
 license = "GPL-3.0"
 
+keywords = ["Mikrotik", "Router Os", "Router Os API"]
+
 [lib]
 name = "router_os"
 path = "src/routeros.rs"
