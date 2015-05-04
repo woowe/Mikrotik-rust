@@ -14,6 +14,13 @@ Add router_os via your `Cargo.toml`:
 router_os = "*"
 ```
 
+#or
+
+```toml
+[dependencies.router_os]
+git = "https://github.com/Wooowe/mikrotik-rust"
+```
+
 ### Usage
 ```rs
 extern crate router_os;
