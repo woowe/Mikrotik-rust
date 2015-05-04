@@ -31,10 +31,10 @@ use std::net::TcpStream;
 fn main() {
     let mut stream = TcpStream::connect("192.168.1.1:8728").unwrap();
 
-	let mut apiros = ApiRos::new(&mut stream);
-	apiros.login("admin".to_string(), "".to_string());
+    let mut apiros = ApiRos::new(&mut stream);
+    apiros.login("admin".to_string(), "".to_string());
 
-    apiros.write_sentece("/ip/address/print".to_string());
+    apiros.write_sentence(vec!["/ip/address/print".to_string()]);
 
     loop {
         let reply = apiros.read_sentence();
