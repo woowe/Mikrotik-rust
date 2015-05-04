@@ -21,7 +21,7 @@ fn main() {
 	let mut stream = TcpStream::connect("192.168.1.1:8728").unwrap();
 
 	let mut apiros = ApiRos::new(&mut stream);
-	apiros.login("admin".to_string(), "admin".to_string());
+	apiros.login("username".to_string(), "password".to_string());
 
 	let mut input_sentence: Vec<String> = Vec::new();
 	let mut has_written = false;
