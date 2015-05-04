@@ -23,7 +23,7 @@ fn main() {
 	let mut apiros = ApiRos::new(&mut stream);
 	apiros.login("admin".to_string(), "admin".to_string());
 
-	let mut inputSentence: Vec<String> = Vec::new();
+	let mut input_sentence: Vec<String> = Vec::new();
 	let mut has_written = false;
 	let mut was_command = false;
 
@@ -49,12 +49,12 @@ fn main() {
 			}
 
 			if &input[..] == "" && was_command {
-				apiros.write_sentence(inputSentence.clone());
-				inputSentence.clear();
+				apiros.write_sentence(input_sentence.clone());
+				input_sentence.clear();
 				was_command = false;
 				has_written = true;
 			}else {
-				inputSentence.push(input);
+				input_sentence.push(input);
 				was_command = true;
 				has_written = false;
 			}

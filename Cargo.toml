@@ -6,7 +6,7 @@ authors = ["Jason Cardinal <jasonfowl1234@yahoo.com>"]
 repository = "https://github.com/Wooowe/mikrotik-rust"
 description = "Mikrotik API for Rust"
 readme = "README.md"
-license = "GPL"
+license = "GPL-3.0"
 
 [lib]
 name = "router_os"

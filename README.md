@@ -11,13 +11,13 @@ This API gives you the ability to connect to your mikrotik router over a tcp con
 Add router_os via your `Cargo.toml`:
 ```toml
 [dependencies]
-router_os = "*"
+routeros_rust = "*"
 ```
 
 #### or
 
 ```toml
-[dependencies.router_os]
+[dependencies.routeros_rust]
 git = "https://github.com/Wooowe/mikrotik-rust"
 ```
 
