@@ -4,7 +4,7 @@ Mikrotik API for Rust
 
 This API gives you the ability to connect to your mikrotik router over a tcp connection.
 
-[![Build Status](https://travis-ci.org/Wooowe/Mikrotik-rust.svg?branch=master)](https://travis-ci.org/Wooowe/Mikrotik-rust)
+[![Build Status](https://travis-ci.org/Wooowe/Mikrotik-rust.svg?branch=master)](https://travis-ci.org/Wooowe/Mikrotik-rust) [![Latest Version](https://img.shields.io/badge/crates.io-0.0.21-orange.svg)](https://crates.io/crates/routeros_rust)
 
 ### Installation
 
