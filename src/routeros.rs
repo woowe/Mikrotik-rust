@@ -135,12 +135,10 @@ impl<'a> ApiRos<'a> {
 	fn read_word(&mut self) -> String {
 		let len = self.read_len();
 		let ret = self.read_str(len as usize);
-		if len > 0 { println!(">>> {}", ret); }
 		ret
 	}
 
 	fn write_word(&mut self, w: String) {
-		if w.len() > 0 { println!("<<< {}", w); }
 		self.write_len(w.len() as u32);
 		self.write_str(&w.as_bytes());
 	}
